@@ -1,0 +1,227 @@
+
+
+body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(248,180,244,1) 0%, rgba(169,219,237,1) 90% );
+    background-size: cover;
+
+}
+                    /* HEAD3R Come to discover... */
+header{
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    background: no-repeat
+    url(./images/massif.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    opacity: 65%;
+} 
+header:hover{
+    transition: 1s;
+    opacity: 1;
+
+}
+
+article{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.grest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 50px;
+}
+
+h1{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin: 0;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-shadow: 2px 1px 0px hsla(0, 0%, 100%, 0.5);
+}
+
+.Villes{
+    display: flex;
+    justify-content:center;
+    margin: 0;
+}
+.Earth {
+    animation: rota1 5s linear infinite;
+
+}
+@keyframes rota1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2{
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 1px 0px hsla(0, 0%, 100%, 0.50);
+}   
+
+article p{
+    font-size: 1.2;
+    letter-spacing: 0.25rem;
+    word-spacing: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    flex-wrap: wrap;
+    margin: 5px;
+    color: hsla(0, 0%, 0%, 0.650);
+    text-shadow: 2px 1px 0px rgba(255, 255, 255, 0.250);
+}
+                        /* Fin de header */
+
+
+                    /* MAIN */
+
+main{
+transition: transform 2s;
+    /* border: 1px solid blue; */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+
+text-align: center;
+margin-top: 15px;
+}
+
+
+                    /* Cards */
+.card{
+border: 5px inset rgba(20,163,216,0.37);
+background: hwb(69 11% 35% / 0.185);
+border-radius: 30px;
+height: auto;
+width: 30vw;
+padding: 10px 0px;
+margin: 25px 10px;
+}
+
+
+.card h2{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card h3{
+    font-family: "Lucida Console", Monaco, monospace;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.card p{
+    font-size: 1rem;
+  font-weight: normal;  
+font-family: arial, sans-serif;
+  font-style: italic;
+color: rgba(0, 0, 0, 0.50);
+text-align: center;
+margin: 5px 15px;
+}
+
+#GE{
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+
+}
+.card img{
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+    border: 3px inset #1c6ea43a;
+}
+
+
+.card:hover{
+    border: 5px outset #14a4d8a9;
+    background: hwb(69 11% 35% / 0.35);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+    
+.card img:hover{
+    transition: 0.5s;
+    border: 3px outset #1C6EA4;
+    transform: scale(1.1);
+
+    border-radius: 30px;
+}
+.card img:active{
+    transition: 0.5s;
+    transform: scale(2);
+    border-radius: 30px;
+}
+
+@media (max-width: 1060px) {
+    .card h2{
+        font-size: 1.2rem;
+    }
+    .card h3{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .card p{
+        font-size: 0.8rem;
+    }
+    .card img{
+        height: 15vw;
+        width: 15vw;
+    }
+    .card img:hover{
+        width: 25vw;
+        height: 25vw;
+        margin-bottom: 15px;
+    }
+
+    article p{
+        font-size: 1;
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+    main {
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    .card {
+        margin-right: 1vw;
+        margin-left: 1vw;
+        border-radius: 5vw;
+        max-width: 45vw;
+        min-width: 40vw;
+    }
+    .card img:active{
+        transform: scale(1.5);
+    }
+}
+@media (max-width: 750px) {
+    article p{
+        text-shadow: 3px 3px 2px lch(0% 0 0);
+        color: oklch(95.256% 0.1559 105.085);
+    }
+    header:hover{
+        opacity: 0.8;
+    }
+}

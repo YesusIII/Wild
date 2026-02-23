@@ -1,0 +1,103 @@
+body{
+    z-index: 100;
+    
+}
+
+            /* HEADER decouvrez .... */
+header{
+position:relative;
+top: 10px;
+/* border: 1px solid black; */
+padding: 5vh 1vw;
+display: flex;
+justify-content: center;
+}
+
+.txt{
+    rotate: -5deg;
+    text-align: center;
+    /* border: 1px solid beige; */
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px hsla(0, 100%, 75%, 0.25), -9px 5px 15px 5px hsla(46, 100%, 77%, 0.25), -7px -5px 15px 5px hsla(117, 100%, 76%, 0.25), 12px -5px 15px 5px hsla(206, 100%, 75%, 0.25), 12px 10px 15px 7px hsla(286, 100%, 77%, 0.253), -10px 10px 15px 7px hsla(356, 100%, 69%, 0.254), -10px -7px 27px 1px hsla(258, 100%, 68%, 0.258), 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 25px;
+background: #eeaeca88;
+background: radial-gradient(circle, rgba(238, 174, 202, 0.3) 0%, rgba(148, 187, 233, 0.3) 100%);
+
+}
+.txt h1{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 0px 15px;
+    margin: 5px;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.25);
+    font-weight: normal;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: oklch(27.448% 0.05322 142.317 / 0.589);
+}
+
+
+.txt h1:hover{
+    transition: 1s;
+    color: #07d100;
+    letter-spacing: 3px;
+    transform: scale(1.25);
+}
+
+#Nice {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(236, 100%, 32%);
+    font-size: 2rem;
+    padding-bottom: 5px;    
+}
+#Nice:hover{
+    transition: 1s;
+    color: yellow;
+    letter-spacing: 10px;
+    transform: scale(1.25);
+}
+
+/* Bandeau nav Lieux */
+Main {
+    position:relative;
+}
+
+.sousnav{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.Lorraine {
+    border: 1px solid red;
+
+}
+.Alsace{
+    border: 1px solid green;
+}
+
+.sousnav ul{
+    display: flex;
+    gap: 2vw;
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+.sousnav li{
+    border: 1px solid yellow;
+}
+
+svg{
+    border: 1px solid green;
+}
+path {
+  fill: transparent;
+}
+
+text {
+    letter-spacing: 1vw;
+    fill: #FF9800;
+}
