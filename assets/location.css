@@ -108,7 +108,7 @@ Main {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("/assets/images/metz.jpg") center/cover;
+  background: url("./images/metz.jpg") center/cover;
   opacity: 0.25;
   z-index: 2; /* en dessous */
 }
@@ -207,3 +207,4 @@ Main {
 }
 .Meuse:hover::before meuse-bq1{
     background-color: lab(49.8% 51.7 42.22 / 0.78); */
+
