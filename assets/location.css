@@ -90,14 +90,120 @@ Main {
     border: 1px solid yellow;
 }
 
-svg{
-    border: 1px solid green;
-}
-path {
-  fill: transparent;
+                                    /* Section Lorr */
+
+.contenair-lor{
+    position: relative;
 }
 
-text {
-    letter-spacing: 1vw;
-    fill: #FF9800;
+.Meuse{
+    position: relative;
+    height: 1000px;
+    clip-path: polygon(100% 0%, 100% 60%, 0% 72%, 0% 12%);
+    margin: auto -10px;
+
 }
+
+.Meuse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("/assets/images/metz.jpg") center/cover;
+  opacity: 0.25;
+  z-index: 2; /* en dessous */
+}
+.Meuse:hover::before{
+    transition: 1s;
+    opacity: 1;
+}
+
+.Meuse h2{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    left: 10%;
+    text-align: center;
+    transform: skewY(-5deg);
+    transform-origin: center;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-weight: bold;
+        text-decoration: underline;
+        font-variant: small-caps;
+        text-shadow: 2px 1px 0px hsla(0, 0%, 100%, 0.5);
+        font-size: 2rem;
+        z-index: 100;
+}
+
+
+.Meuse blockquote{
+    position: absolute;
+    z-index: 100;
+    border: 1px solid black;
+    display: flex;
+    opacity: 0.5;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+    font-style: italic;
+    font: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card blockquote:nth-child(1) { background-color: lch(97.5% 51.71 105.31 / 0.25); }
+.card blockquote:nth-child(2) { background-color: hsla(335, 57%, 67%, 0.25); }
+.card blockquote:nth-child(3) { background-color: oklch(73.6% 0.17367 119.748 / 0.25); }
+.card blockquote:nth-child(4) { background-color: oklab(67.929% -0.18066 0.1401 / 0.25); }
+
+.meuse-bq1{
+    top: 25%;
+    left: 5%;
+    width: 25vw;
+}
+
+.meuse-bq2{
+    top: 45%;
+    left: 15%;
+    width: 25vw;
+}
+.meuse-bq3{
+    top: 15%;
+    left: 55%;
+    width: 25vw;
+}
+.meuse-bq4{
+    top: 35%;
+    left: 55%;
+    width: 25vw;
+}
+
+.Meuse blockquote:hover{
+    transition: 0.5s;
+    box-shadow: inset 0px 2px 20px 0px #00000080;
+    background-color: lab(96.98% -12.52 -4.76 / 0.918);
+    opacity: 1;
+    transform: scale(1.25);
+    text-align: center;
+    z-index: 500;
+}
+
+.Meuse:hover blockquote{ transition: 1s;
+    opacity: 1;}
+
+
+
+
+/* #meuse-bq1:hover{
+        background-color: lch(87.88% 22.06 304.29 / 0.78);
+} */
+/* #meuse-bq2:hover{
+        background-color: hwb(181 84% 0% / 0.78);
+}
+#meuse-bq3:hover{
+        background-color: hwb(181 84% 0% / 0.78);
+}
+#meuse-bq4:hover{
+        background-color: lab(90.12% 21.12 -14.62 / 0.78);
+}
+.Meuse:hover::before meuse-bq1{
+    background-color: lab(49.8% 51.7 42.22 / 0.78); */
